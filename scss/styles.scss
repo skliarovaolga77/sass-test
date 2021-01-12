@@ -1,0 +1,55 @@
+// файл спецификации
+@import "specification.scss";
+
+//переменные $
+$Fz80: 80px;
+$Fz50: 50px;
+$ColGreen: green;
+$ColRed: rgb(180, 46, 46);
+
+//шаблоны
+%tplborder{
+    border-bottom: 5px dashed #000;
+}
+
+//миксины
+@mixin fontz($f, $c){
+    font-size:$f;
+    color: $c;
+}
+
+.title {
+    font-size:$Fz80;
+}
+.block {
+    width: 500px / 960px *100%;
+    background-color: #666;
+    font-size:30px;
+    border: 2px solid $ColRed;
+    text-align: center;
+    .block__text {
+        font-size: $Fz50;
+        span{
+            color: $ColGreen;
+        }
+    }
+    &.block-big {
+        font-size:100px;
+    }
+}
+.link {
+    color: blue;
+    text-decoration: underline;
+    font-size: 20px;
+    .block & {
+        font-size: $Fz80;
+    }
+    &:hover{
+        color: $ColRed;
+    }
+    @extend %tplborder;
+}
+.link-2 {
+    @include fontz(50px, rgb(43, 255, 0));
+    
+}

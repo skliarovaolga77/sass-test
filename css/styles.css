@@ -1,0 +1,59 @@
+p {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f1f1;
+}
+
+h1, h2 {
+  color: green;
+}
+
+.link {
+  border-bottom: 5px dashed #000;
+}
+
+.title {
+  font-size: 80px;
+}
+
+.block {
+  width: 52.08333%;
+  background-color: #666;
+  font-size: 30px;
+  border: 2px solid #b42e2e;
+  text-align: center;
+}
+
+.block .block__text {
+  font-size: 50px;
+}
+
+.block .block__text span {
+  color: green;
+}
+
+.block.block-big {
+  font-size: 100px;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.block .link {
+  font-size: 80px;
+}
+
+.link:hover {
+  color: #b42e2e;
+}
+
+.link-2 {
+  font-size: 50px;
+  color: #2bff00;
+}
+/*# sourceMappingURL=styles.css.map */
